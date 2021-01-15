@@ -1,0 +1,28 @@
+@font-face {
+    src: url("ticking-timebomb-bb.regular.ttf");
+}
+
+.display{
+    -fx-background: #d5d9b8;
+}
+
+.output{
+    -fx-text-alignment: right;
+    -fx-font-family: "Ticking Timebomb BB";
+    -fx-font-size: 30;
+}
+
+.base{
+    -fx-focus-color: transparent;
+    -fx-background-color: #343434;
+}
+
+.button{
+    -fx-background-color: black;
+    -fx-text-fill: #F7F7F7;
+}
+
+.delButton{
+    -fx-background-color: #E78609;
+    -fx-text-fill: black;
+}

@@ -1,0 +1,63 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.ScrollPane?>
+<VBox spacing="10" alignment="CENTER" prefWidth="400" prefHeight="400" fx:controller="CalculatorController"
+      xmlns:fx="http://javafx.com/fxml" styleClass="base">
+
+    <StackPane>
+          <ScrollPane maxWidth="270" minHeight="50" styleClass="display">
+        <Text fx:id="output" textAlignment="CENTER" styleClass="output"/>
+          </ScrollPane>
+    </StackPane>
+    
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="8" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="9" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="DEL" prefWidth="50" onAction="#delete" styleClass="delButton"/>
+        <Button text="AC" prefWidth="50" onAction="#clearAll" styleClass="delButton"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="5" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="6" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="*" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="/" prefWidth="50" onAction="#processOperandOrOperator"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="2" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="3" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="+" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="-" prefWidth="50" onAction="#processOperandOrOperator"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="(" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text=")" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="√" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="^" prefWidth="50" onAction="#processOperandOrOperator"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="sin" prefWidth="50" onAction="#processFunction"/>
+        <Button text="cos" prefWidth="50" onAction="#processFunction"/>
+        <Button text="tan" prefWidth="50" onAction="#processFunction"/>
+        <Button text="π" prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="=" prefWidth="50" onAction="#processExpression"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="log" prefWidth="50" onAction="#processFunction"/>
+        <Button text="." prefWidth="50" onAction="#processOperandOrOperator"/>
+        <Button text="Ans" prefWidth="170" onAction="#retrievePreviousAns"/>
+    </HBox>
+</VBox>
