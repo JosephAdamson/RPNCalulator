@@ -2,7 +2,7 @@
 Simple scientific calculator application that implements Dijkstra's
 shunting yard algorithm. Built using an MVC design pattern.
 
-[![calc.png](https://i.postimg.cc/59wFPRp7/calc.png=50x50)](https://postimg.cc/RqZFhGkK)
+[![calc.png](https://i.postimg.cc/59wFPRp7/calc.png)](https://postimg.cc/RqZFhGkK =50x50)
 
 ## How To Use
 
