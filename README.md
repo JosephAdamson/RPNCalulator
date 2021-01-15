@@ -6,8 +6,6 @@ shunting yard algorithm. Built using an MVC design pattern.
 
 ## How To Use
 
-You will need:
-`Javafx-sdk 14.0.1` or  later to run the program.
 You will need to download both RPN.jar and run.command files.
 To configure the run.command you need to edit two sections in
 run.command:
