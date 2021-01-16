@@ -6,11 +6,8 @@ shunting yard algorithm. Built using an MVC design pattern.
 
 ## How To Use
 
-You will need to download both RPN.jar and run.command files.
-To configure the run.command you need to edit two sections in
-run.command:
+You will need to download the app folder (containing .jar and .command files).
+To configure the run.command you need to edit two sections:
 
 `java --module-path <add path to your javafxSDK> --add-modules javafx.controls,javafx.fxml -jar <add path to jar>/RPN.jar`
-
-Make sure the run.command file is in the same directory
-as RPN.jar before execution. 
+ 

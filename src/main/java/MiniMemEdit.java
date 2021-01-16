@@ -22,7 +22,7 @@ public class MiniMemEdit {
     public static void store(String result) {
         try {
             PrintWriter output = 
-                    new PrintWriter(System.getProperty("user.dir") + "/src/MiniMem.txt");
+                    new PrintWriter(System.getProperty("user.dir") + "/MiniMem.txt");
             output.println(result);
             output.close();
         } catch (FileNotFoundException e) {
@@ -41,7 +41,7 @@ public class MiniMemEdit {
         String result = "";
         try {
             Scanner scan = 
-                    new Scanner(new File(System.getProperty("user.dir") + "/src/MiniMem.txt"));
+                    new Scanner(new File(System.getProperty("user.dir") + "/MiniMem.txt"));
             result = scan.nextLine();
         } catch (FileNotFoundException e) {
             System.err.println("Sorry, memory file cannot be found");
